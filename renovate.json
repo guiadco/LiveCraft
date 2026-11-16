@@ -3,7 +3,7 @@
   "extends": [
     "config:best-practices"
   ],
-  "baseBranches": [
+  "baseBranchPatterns": [
     "main"
   ],
   "commitBody": "[Renovate]",
@@ -19,8 +19,10 @@
       "security"
     ]
   },
-  "dependencyDashboard": true,
-  "dependencyDashboardOSVVulnerabilitySummary": "all",
+  "dependencyDashboard": {
+    "enabled": true,
+    "osvVulnerabilitySummary": "all"
+  },
   "separateMajorMinor": true,
   "lockFileMaintenance": {
     "enabled": true,
